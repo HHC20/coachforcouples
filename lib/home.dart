@@ -15,10 +15,13 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor:  Colors.redAccent,
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        backgroundColor: Color.fromRGBO(238, 236, 226, 1),
+        title: Text(
+            "Coach For Couples",
+          style: TextStyle(fontSize: 40, color: Colors.redAccent),
+        ),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -27,7 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Welcome. ',
+              'Choisissez votre icone'.toUpperCase(),
+              style: TextStyle(fontSize: 25, color: Colors.white),
             ),
             Text(
               '$_username',
